@@ -27,8 +27,8 @@ SET default_with_oids = false;
 CREATE TABLE public.actors (
     id integer NOT NULL,
     name text,
-    dateOfbirth date,
-    movie_id integer
+    date_birth date,
+    gender text
 );
 
 

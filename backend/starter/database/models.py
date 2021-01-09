@@ -41,7 +41,8 @@ class Actor(db.Model):
 
     id = Column(Integer, primary_key=True)
     name = Column(String)
-    dateOfbirth = Column(db.Date)
+    date_birth = Column(db.Date)
+    gender = Column(String)
     #movie_id = Column(db.Integer, db.ForeignKey('movies.id'), nullable=False) 
    
     '''
@@ -49,11 +50,12 @@ class Actor(db.Model):
         short form representation of the Drink model
     '''
     def short(self):
-        print(json.loads(self.name))
+        #print(json.loads(self.name))
+        print(self.name)
         #short_recipe = [{'color': r['color'], 'parts': r['parts']} for r in json.loads(self.recipe)]
         return {
             'id': self.id,
-            'title': self.name,
+            'name': self.name,
         }
 
     '''
@@ -63,8 +65,10 @@ class Actor(db.Model):
     def long(self):
         return {
             'id': self.id,
-            'name': self.title,
-            'dateOfbirth': json.loads(self.dateOfbirth)
+            'name': self.name,
+            #'dateOfbirth': json.loads(self.dateOfbirth)
+            'date_birth': self.date_birth,
+            'gender': self.gender
         }
 
     '''
@@ -135,7 +139,8 @@ class Movie(db.Model):
         short form representation of the Drink model
     '''
     def short(self):
-        print(json.loads(self.title))
+        #print(json.loads(self.title))
+        print(self.title)
         #short_recipe = [{'color': r['color'], 'parts': r['parts']} for r in json.loads(self.recipe)]
         return {
             'id': self.id,
@@ -150,7 +155,10 @@ class Movie(db.Model):
         return {
             'id': self.id,
             'title': self.title,
-            'discription': json.loads(self.description)
+            'release_date': self.release_date,
+            #'description': json.loads(self.description)
+            'description': self.description,
+            'actor_id': self.actor_id
         }
 
     '''

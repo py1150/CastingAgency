@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "a1f84ae3-2209-49da-88a4-8a1a30ef2e50",
+		"name": "agency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/movies",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies"
+					]
+				},
+				"description": "list all movies"
+			},
+			"response": []
+		},
+		{
+			"name": "/movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"The Godfather\",\n    \"release_date\":\"1972-03-24\",\n    \"description\":\"Crime movie\",\n    \"actor_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/movies",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies"
+					]
+				},
+				"description": "Inserts a new movie"
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/movies/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies",
+						"2"
+					]
+				},
+				"description": "Delete movie with id=2"
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/3",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Goodfellas\",\n    \"release_date\":\"1990-09-21\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/movies/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies",
+						"3"
+					]
+				},
+				"description": "Update the information of the movie with id = 3"
+			},
+			"response": []
+		},
+		{
+			"name": "/actors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/actors",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors"
+					]
+				},
+				"description": "get all actors"
+			},
+			"response": []
+		},
+		{
+			"name": "/actors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Al Pacino\",\n    \"date_birth\":\"1940-04-25\",\n    \"gender\":\"male\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/actors",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors"
+					]
+				},
+				"description": "inserts a new actor"
+			},
+			"response": []
+		},
+		{
+			"name": "/actors/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/actors/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors",
+						"2"
+					]
+				},
+				"description": "Deletes actor with id=2"
+			},
+			"response": []
+		},
+		{
+			"name": "/actors/3",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Robert De Niro\",\n    \"date_birth\":\"1943-08-17\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/actors/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors",
+						"3"
+					]
+				},
+				"description": "Update the information of the movie with id = 3"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "127.0.0.1:5000"
+		}
+	]
+}

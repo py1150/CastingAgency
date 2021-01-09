@@ -1,10 +1,17 @@
 # CastingAgency
 
+dependencies
+------------
+pip install -r requirements.txt
+
+
 backend
+-------
 
 /datatabse
 createdb agency
 psql agency < agency.psql
 
 
-nicht uebersetzt werden postings die google translate nicht meine
+frontend
+--------
