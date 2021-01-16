@@ -110,9 +110,9 @@ INSERT
 """
 
 @APP.route('/movies', methods = ['POST'])
-@requires_auth('post:movies')
-def insert_movie(payload):
-#def insert_movie():  
+#@requires_auth('post:movies')
+#def insert_movie(payload):
+def insert_movie():  
 
     # content of post request  
     result_dict = request.get_json()
@@ -136,9 +136,9 @@ def insert_movie(payload):
 
 
 @APP.route('/actors', methods = ['POST'])
-@requires_auth('post:actors')
-def insert_actor(payload):
-#def insert_actor():
+#@requires_auth('post:actors')
+#def insert_movie(payload):
+def insert_actor():
 
     # content of post request  
     result_dict = request.get_json()
@@ -187,9 +187,9 @@ def insert_drink(payload):
 PATCH
 """    
 @APP.route('/movies/<int:id>', methods=['PATCH'])
-@requires_auth('patch:movies')
-def update_movie(payload, id):
-#def update_movie(id):
+#@requires_auth('patch:movies')
+#def update_drink(payload, id):
+def update_movie(id):
     result_dict = request.get_json()
     movie = Movie.query.filter(Movie.id == id).first()
 
@@ -216,9 +216,9 @@ def update_movie(payload, id):
 
 
 @APP.route('/actors/<int:id>', methods=['PATCH'])
-@requires_auth('patch:actors')
-def update_actor(payload, id):
-#def update_actor(id):
+#@requires_auth('patch:actors')
+#def update_drink(payload, id):
+def update_actor(id):
     result_dict = request.get_json()
     actor = Actor.query.filter(Actor.id == id).first()
 
@@ -281,9 +281,9 @@ def update_drink(payload, id):
 DELETE
 """    
 @APP.route('/movies/<int:id>', methods=['DELETE'])
-@requires_auth('delete:movies')
-def delete_movie(payload, id):
-#def delete_movie(id):
+#@requires_auth('delete:movies')
+#def delete_movie(payload, id):
+def delete_movie(id):
     movie = Movie.query.filter(Movie.id == id).first()
 
     if movie==None:
@@ -295,9 +295,9 @@ def delete_movie(payload, id):
         abort(400)
 
 @APP.route('/actors/<int:id>', methods=['DELETE'])
-@requires_auth('delete:actors')
-def delete_actor(payload, id):
-#def delete_actor(id):
+#@requires_auth('delete:actors')
+#def delete_actor(payload, id):
+def delete_actor(id):
     actor = Actor.query.filter(Actor.id == id).first()
 
     if actor==None:

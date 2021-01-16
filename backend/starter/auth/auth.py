@@ -16,7 +16,8 @@ import os, ssl
 AUTH0_DOMAIN = 'py1150.eu.auth0.com'
 ALGORITHMS = ['RS256']
 #API_AUDIENCE = 'dev'
-API_AUDIENCE = 'http://127.0.0.1:5000/'
+#API_AUDIENCE = 'http://127.0.0.1:5000/'
+API_AUDIENCE = 'agency'
 
 ## AuthError Exception
 '''
