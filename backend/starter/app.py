@@ -298,5 +298,7 @@ def auth_error(error):
 
 
 if __name__ == '__main__':
-    APP.run(host='0.0.0.0', port=8080, debug=True)
+    #APP.run(host='0.0.0.0', port=8080, debug=True)
+    #APP.run(host='0.0.0.0', port=8080, debug=False)
+    APP.run(debug=False)
     #APP.run(debug=True) #development
