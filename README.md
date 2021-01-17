@@ -68,6 +68,13 @@ authentication
 Login is at ....
 Sign up to receive token
 
+Auth0 Domain name: py1150.eu.auth0.com
+JWT secret: LU0wdilfit94XeL8KYeAnUN-312Xf-NBzA5AY8G5ep1ZYxoMDWCnEJAdCm5l9Rgm
+Auth0 ClientID: EeYJIGaf3frKfj1nRwclF8nA9N88wYpz
+
+
+development server
+------------------
 
 
 frontend
