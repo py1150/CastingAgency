@@ -301,4 +301,6 @@ if __name__ == '__main__':
     #APP.run(host='0.0.0.0', port=8080, debug=True)
     #APP.run(host='0.0.0.0', port=8080, debug=False)
     APP.run(port=8000, debug=False)
+
+    in_port = int(os.environ.get('PORT',8000))
     #APP.run(debug=True) #development
