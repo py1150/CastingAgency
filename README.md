@@ -92,15 +92,15 @@ Auth0 ClientID: EeYJIGaf3frKfj1nRwclF8nA9N88wYpz
 
 Roles:
 ------
-Casting Assistant:
+Casting Assistant:<br/>
 Can view actors and movies
 
-Casting Director:
-All permissions a Casting Assistant has and…
-Add or delete an actor from the database
+Casting Director:<br/>
+All permissions a Casting Assistant has and…<br/>
+Add or delete an actor from the database<br/>
 Modify actors or movies
 
-Executive Producer:
-All permissions a Casting Director has and…
+Executive Producer:<br/>
+All permissions a Casting Director has and…<br/>
 Add or delete a movie from the database
 
