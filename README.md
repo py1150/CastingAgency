@@ -56,8 +56,8 @@ heroku pg:psql --app ud-agency<agency.psql
 Testing
 --------
 API tests are conducted by two ways:
-1) via Postman (see exported requests)
-2) via unittest in test_app.py
+1: via Postman (see exported requests)
+2: via unittest in test_app.py
 
 1)
 backend/starter
@@ -71,12 +71,14 @@ To run the tests, run
 dropdb agency_test
 createdb trivia_test
 psql agency_test < agency.psql
+```
 
+```
 /backend/starter
 python test_app.py
-
-Roles: Tests are executed as Executive Producer
 ```
+
+
 
 authentication
 ---------------
