@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "07b2cf15-58e7-4ee4-9a1d-5f8a38ed62f4",
-		"name": "agency",
+		"_postman_id": "20cf71fe-4e8c-4b76-bc8b-b46a3018805f",
+		"name": "agency_deployed",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -69,13 +69,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/movies/2",
+							"raw": "{{host}}/movies/8",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"movies",
-								"2"
+								"8"
 							]
 						},
 						"description": "Delete movie with id=2"
@@ -131,16 +131,6 @@
 				{
 					"name": "/actors",
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWZlOWQ4MWM3OWFjNzkwMDZmYTc5NDJiIiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwNjkzMjEwLCJleHAiOjE2MTA3MDA0MTAsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.k0CfHGF9ofKr4IJa4FJCJ6wpAZcgOTmbzEVMiVNIuz_tbv5wVGoMmHzIw27kOg7HW0S7tOiR6z7cX8euE-Je3DmbF0TR1FiHZbvqCU-YgNtzkBC1oFeFT_ga53WJ1aebIjoCQxD6MA8uH1K1TN8TYJYJ6F55frxFZxGeTXxiZlSIy0wdu3osuuo3Br6dsQGGZVTlLG4N1AZ0BkwTJHnNwmXHIxhbg9yPK0_GRJE7qJvJugV2y5NPkb90pePHKVKmontMPOLBBtqAQeN_op24dOMe_kyXnqZMvkpEzEV3ClPvSCc4Y8tbu3OR0xoqVJe0h7tRNg6g2Fh6W3RSnlJbFA",
-									"type": "string"
-								}
-							]
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -199,13 +189,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/actors/15",
+							"raw": "{{host}}/actors/1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"15"
+								"1"
 							]
 						},
 						"description": "Update the information of the movie with id = 3"
@@ -218,7 +208,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWZlOWQ4MWM3OWFjNzkwMDZmYTc5NDJiIiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwODE5NzIyLCJleHAiOjE2MTA4MjY5MjIsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.kQKrIgLkVMXFs1Oc-gUYv5lF6Af7ESe8MEarb1Twj6SdzgF-edUp-geRN3lWmiooFd5eSxJuIoc5LbxH9AejA9QZH_wlA6TVMo8QCpTRbQuL2LXQrQtxh942OsQDdGwvE5yu7LeLmqlLIjoDVlH7oBh5yt4nkFZW2s1KfUn0FoHtGZEBaWTvzro3k-sz7RceSahW1VwyzlCg8hoCzD3fHLlNwL-FFg5YyLY1xi4n4j-ci7UrYCNWCtuFMPpZ-rjSp_kFbaWIVQoIjeZSDJ7fOVbOewg5c_CWP1FmU4OHS-DWevJV_nxsXyJZL1KLOxUz2WnyLiR6bf68d8Nti-BWRA",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWZlOWQ4MWM3OWFjNzkwMDZmYTc5NDJiIiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwOTUzMDM4LCJleHAiOjE2MTA5NjAyMzgsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.m_NpeOi-t_76391ANxN47w96qQvA_I2k3xFqJvlhWQxi8I5716LT5aMTYEW_gMmQzRk0GPpbXvF2zrNEMj2egaavCLOTLcKJvSWyQ0AQIyMP2DibQtswSBvnn6WYX78cL_RVeWpvMNKljo8jKRl3nhTIXHasbgbEf8cdFzfbJYuPNTMlfdR6f1Kzz2zy81Dtws79_vS7TYFKMKvbqqmPmtY-EWBOMW73xWRlv_BOgC40gB0HM7_LtARfOQqhXDJCyWHw1THCD2F5Qig_R27oe4XokbrLx0_pv6W1tLIbOc0UMfseYouAC4CuvcJYC-7qiP86YvSCZ5SjNKtEdlIH-Q",
 						"type": "string"
 					}
 				]
@@ -457,7 +447,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWZlOWUzODY3MWY1NWIwMDY5NzBkM2M1IiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwNzk5Mzg3LCJleHAiOjE2MTA4MDY1ODcsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiXX0.RqBITXR6QPGhlF7YhFqrPn5b4dJ9qYMz0nu9_TmUCMAbEZPxTJHPYW5BLDTAHen1XaRspKycW2Gy7_IvBOUpOvpxf957abeuIaYeohpUu4V7N-Wx-AvjZOvczLqtQRCcZ8xjYkoDIWoWFf-G6zYy0xqaicQmTAJfELQXEZUzT1Z_n_9cAa7aqy-816yAfePYyZqL7V5SwnmB-l983UDWLkqBF-AjOBO7OgkMNyeAqtOkBloXu-XQFcZf7noJagWGqyZxHibbt80hEP-oLdLdXKF1NHCTfPGfDgZAa8czOHf4aa-oiWAHKKHs6VHyX7cIVqwdnDuhrGR3hrt0223jaw",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWZlOWUzODY3MWY1NWIwMDY5NzBkM2M1IiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwOTUzMTYyLCJleHAiOjE2MTA5NjAzNjIsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiXX0.E0HM6GV7uyD6wD5I4IQeYmEnivU5gVF6xvVmrdlhgmGuhYxci7lyflS79lrAzHV-LljORykItZls0x6A0_mkNv2-KaZi4Qzf_xbyBgeOO8Fpk64Ku-grnm1lEkj5jep-Xt34CzP9MYiHaJ1HHESXVnyFwWhYPlgG0yK9UwcBIhmBtuhqp1xy2Mb22LcbGYh_4Fu4sFqXy-i8W6dv4VSpSQMx1NbxLn4XdwsdFGSqlb_3MzsiKui_bC1wUnEOfgk-QaY40ZdWP2MtSi5KV7WgMZgh0EyLF-ah53o31kL2dO4Lyy89rITvzipPSlYe7Emv41XpcBZOrCNqG8cKeHSSkw",
 						"type": "string"
 					}
 				]
@@ -696,7 +686,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjAwMmIxOGQ1NDgzZGQwMDY5NTU3NzQyIiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwNzk4OTgzLCJleHAiOjE2MTA4MDYxODMsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6W119.TNc8Kg6OLpeWKjVgZKdg02In1i9kdORk6bZSjYCUP4aiUTdDgOijkWxyrVm5rGfeS0rf5jTVENNCh_Iko6_O8DH8i2EfOgiwviWjxPv5wv43XZkdTSeE1vRSXtfzvuL05CBsK0gJG9fsPakzTv_ZujY4u_wjAGNw0xooS-Wy_nMOI-rS8MvygLM2ivbY41UZ0FHLVxqn68zaQocWiWR6hhF2Jdg8mSv4_Oybca2PpUggXJJl-kCX_VtFY8fi5W6q2R31SFz6PQkkWfnxsIuP1tau7hsiQmwAZUsWbOZtZA49wnL260-JNK9zqp9xMorEjxgIOypmtD6YINtIFbwIrw",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3MiOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjAwMmIxOGQ1NDgzZGQwMDY5NTU3NzQyIiwiYXVkIjoiYWdlbmN5IiwiaWF0IjoxNjEwOTUzMzgyLCJleHAiOjE2MTA5NjA1ODIsImF6cCI6IkVlWUpJR2FmM2ZyS2ZqMW5Sd2NsRjhuQTlOODh3WXB6Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6W119.EESs6xZs078FcYAmtIr-qCNxKyfDvOvpMF_uGb11hPGa07W-74KFA9_HsiZ7OFM5VeLmrpoCZcHa9tvIBA5sWmdQuDjb4vYhYEXvBw_T_gt1S_7VS4L08h1fvP5dyrOsRPoOMcC0lkKqCaImlPiViPCCZrQwwgpgjdJsjzipWbpTxurBBOveK1tg5t-KqhxpXZsI9sHIltLVNrSxYS1VlVlCiLR5LG5VGPZuUI3bJNBSH6NWNJZg1bQ_O4xWAbc11UgSrwDciip478AKpSllBR5rz5idgm14qRAEXMKm-CG34qXasuVDXk6D8LafZToffeBYYfD7-9bmJp75Oy6scA",
 						"type": "string"
 					}
 				]
@@ -746,7 +736,11 @@
 	"variable": [
 		{
 			"key": "host",
-			"value": "127.0.0.1:5000"
+			"value": "https://ud-agency.herokuapp.com"
+		},
+		{
+			"key": "local_host",
+			"value": "http://0.0.0.0:5000"
 		}
 	]
 }
