@@ -14,12 +14,30 @@ The api is located at Heroku at:
 https://ud-agency.herokuapp.com/ 
 
 
+API behavior
+------------
+/actors
+methods = ['GET']: list all entries
+methods = ['POST']: insert a new entry
+/actors/<int:id>
+methods = ['DEL']: delete an entry with specific id
+methods = ['PATCH']: update an enry with specific id
+
+/movies
+methods = ['GET']: list all entries
+methods = ['POST']: insert a new entry
+/movies/<int:id>
+methods = ['DEL']: delete an entry with specific id
+methods = ['PATCH']: update an enry with specific id
+
+
+
 dependencies
 ------------
 pip install -r requirements.txt
 
 
-backend
+Database
 -------
 
 Database local:
