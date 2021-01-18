@@ -24,12 +24,12 @@ methods = ['DEL']: delete an entry with specific id <br/>
 methods = ['PATCH']: update an enry with specific id <br/>
 
 
-/movies
-methods = ['GET']: list all entries
-methods = ['POST']: insert a new entry
-/movies/<int:id>
-methods = ['DEL']: delete an entry with specific id
-methods = ['PATCH']: update an enry with specific id
+/movies <br/>
+methods = ['GET']: list all entries <br/>
+methods = ['POST']: insert a new entry <br/>
+/movies/<int:id> <br/>
+methods = ['DEL']: delete an entry with specific id <br/>
+methods = ['PATCH']: update an enry with specific id <br/>
 
 
 
