@@ -20,6 +20,7 @@ https://ud-agency.herokuapp.com/
 
 
 ENDPOINT DOCUMENTATION
+----------------------
 ```
 
 Endpoints
@@ -121,21 +122,6 @@ DELETE '/movies/<id>'
 ```
 
 
-Roles:
-------
-Casting Assistant:<br/>
-Can view actors and movies
-
-Casting Director:<br/>
-All permissions a Casting Assistant has and…<br/>
-Add or delete an actor from the database<br/>
-Modify actors or movies
-
-Executive Producer:<br/>
-All permissions a Casting Director has and…<br/>
-Add or delete a movie from the database
-
-
 
 dependencies
 ------------
@@ -154,6 +140,22 @@ Database deployed:
 models.py --> database_path
 /database
 heroku pg:psql --app ud-agency<agency.psql
+
+
+RBAC:
+------
+Casting Assistant:<br/>
+Can view actors and movies
+
+Casting Director:<br/>
+All permissions a Casting Assistant has and…<br/>
+Add or delete an actor from the database<br/>
+Modify actors or movies
+
+Executive Producer:<br/>
+All permissions a Casting Director has and…<br/>
+Add or delete a movie from the database
+
 
 
 

@@ -85,8 +85,7 @@ def insert_movie(payload):
     movie = Movie(title=title,\
                   description=description,\
                   release_date=release_date,\
-                  actor_id=actor_id)    
-
+                  actor_id=actor_id)
     # insert to database 
     try:
         movie.insert()
