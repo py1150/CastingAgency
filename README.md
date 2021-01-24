@@ -127,6 +127,7 @@ dependencies
 ------------
 pip install -r requirements.txt
 
+setup in setup.sh
 
 Database
 -------

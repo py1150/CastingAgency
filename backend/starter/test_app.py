@@ -46,6 +46,8 @@ class AgencyTestCase(unittest.TestCase):
             'localhost:5432', self.database_name)
         setup_db(self.app)
 
+        self.token_in = os.environ.get('CASTING_DIRECTOR')
+        """
         self.token_in = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCI\
             sImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3M\
             iOiJodHRwczovL3B5MTE1MC5ldS5hdXRoMC5jb20vIiwic3Vi\
@@ -63,6 +65,7 @@ class AgencyTestCase(unittest.TestCase):
             NwL-FFg5YyLY1xi4n4j-ci7UrYCNWCtuFMPpZ-rjSp_kFbaWI\
             VQoIjeZSDJ7fOVbOewg5c_CWP1FmU4OHS-DWevJV_nxsXyJZL\
             1KLOxUz2WnyLiR6bf68d8Nti-BWRA'
+        """
 
         self.new_actor = {
             "name": "Al Pacino",
