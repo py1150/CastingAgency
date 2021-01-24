@@ -154,6 +154,8 @@ heroku pg:psql --app ud-agency<agency.psql
 
 RBAC:
 ------
+example tokens can be found in setup.sh <br/>
+
 Casting Assistant:<br/>
 Can view actors and movies
 
