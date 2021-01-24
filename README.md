@@ -169,20 +169,29 @@ All permissions a Casting Director has and…<br/>
 Add or delete a movie from the database
 
 
+authentication
+---------------
+Login is at:
+https://py1150.eu.auth0.com/authorize?audience=agency&response_type=token&client_id=EeYJIGaf3frKfj1nRwclF8nA9N88wYpz&redirect_uri=http://localhost:3000/user
+
+Auth0 Domain name: py1150.eu.auth0.com
+JWT secret: LU0wdilfit94XeL8KYeAnUN-312Xf-NBzA5AY8G5ep1ZYxoMDWCnEJAdCm5l9Rgm
+Auth0 ClientID: EeYJIGaf3frKfj1nRwclF8nA9N88wYpz
+
 
 Testing
 --------
-API tests are conducted by two ways:
-1: via Postman (see exported requests)
-2: via unittest in test_app.py
+API tests are conducted by two ways: <br/>
+1: via Postman (see exported requests) <br/>
+2: via unittest in test_app.py <br/>
 
-1)
-backend/starter
-gency.postman_collection_local.json
-gency.postman_collection_deployed.json
+1) <br/>
+backend/starter <br/>
+gency.postman_collection_local.json <br/>
+gency.postman_collection_deployed.json <br/>
 
-2)
-To run the tests, run
+2) <br/>
+To run the tests, run 
 ```
 /backend/starter/database
 dropdb agency_test
@@ -197,13 +206,5 @@ python test_app.py
 
 
 
-authentication
----------------
-Login is at:
-https://py1150.eu.auth0.com/authorize?audience=agency&response_type=token&client_id=EeYJIGaf3frKfj1nRwclF8nA9N88wYpz&redirect_uri=http://localhost:3000/user
-
-Auth0 Domain name: py1150.eu.auth0.com
-JWT secret: LU0wdilfit94XeL8KYeAnUN-312Xf-NBzA5AY8G5ep1ZYxoMDWCnEJAdCm5l9Rgm
-Auth0 ClientID: EeYJIGaf3frKfj1nRwclF8nA9N88wYpz
 
 
