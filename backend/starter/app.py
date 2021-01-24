@@ -1,5 +1,10 @@
 import os
-from flask import Flask, request, abort, jsonify
+from flask import (
+    Flask,
+    request,
+    abort,
+    jsonify
+)
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
@@ -32,6 +37,17 @@ def after_request(response):
         'Access-Control-Allow-Headers',
         'GET, POST, PATCH, DELETE, OPTIONS')
     return response
+
+
+"""
+INDEX
+"""
+
+
+@APP.route('/')
+def index():
+    return jsonify({'message': 'Welcome to Agency'}
+                   )
 
 
 """
@@ -221,10 +237,9 @@ def delete_actor(payload, id):
         abort(400)
 
 
-# Error Handling
-'''
-Example error handling for unprocessable entity
-'''
+"""
+ERROR HANDLING
+"""
 
 
 @APP.errorhandler(422)
@@ -234,18 +249,6 @@ def unprocessable(error):
         "error": 422,
         "message": "unprocessable"
     }), 422
-
-
-'''
-@TODO implement error handlers using the @app.errorhandler(error) decorator
-    each error handler should return (with approprate messages):
-             jsonify({
-                    "success": False,
-                    "error": 404,
-                    "message": "resource not found"
-                    }), 404
-
-'''
 
 
 @APP.errorhandler(400)
@@ -284,12 +287,6 @@ def method_not_allowed(error):
     }), 405
 
 
-'''
-@TODO implement error handler for 404
-    error handler should conform to general task above
-'''
-
-
 @APP.errorhandler(404)
 def not_found(error):
     return jsonify({
@@ -297,12 +294,6 @@ def not_found(error):
         "error": 404,
         "message": "not found"
     }), 404
-
-
-'''
-@TODO implement error handler for AuthError
-    error handler should conform to general task above
-'''
 
 
 @APP.errorhandler(AuthError)
@@ -315,7 +306,4 @@ def auth_error(error):
 
 
 if __name__ == '__main__':
-    """ in_port = int(os.environ.get('PORT', 8000))
-    APP.run(debug=True) #development """
-    # APP.run(host='0.0.0.0', port=8080, debug=True)
     APP.run(port=8000, debug=False)
