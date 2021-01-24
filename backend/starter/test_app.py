@@ -46,7 +46,7 @@ class AgencyTestCase(unittest.TestCase):
             'localhost:5432', self.database_name)
         setup_db(self.app)
 
-        self.token_in = os.environ.get('CASTING_DIRECTOR')
+        self.token_in = os.environ.get('EXECUTIVE_PRODUCER')
         """
         self.token_in = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCI\
             sImtpZCI6IkRVQlM1TEhLVGFITmF1dWt0N3VZUiJ9.eyJpc3M\
