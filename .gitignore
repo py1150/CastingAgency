@@ -132,3 +132,6 @@ dmypy.json
 # Notes
 pw
 frontend/
+testcode.py
+heroku_sample/
+pycodestyle_output.txt
