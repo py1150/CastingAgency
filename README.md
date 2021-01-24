@@ -131,10 +131,10 @@ setup in setup.sh
 
 Development Server
 ------------------
-Heroku Config Vars
-DATABASE_URL = 'postgres://rbgblbcllsormd:cf49d999f6a4acbf22eb09d5a0dbe963a51e1ce235bb2de1c89e5f00f3b468cf@ec2-52-213-173-172.eu-west-1.compute.amazonaws.com:5432/d9fuhp8j095eoj'
-AUTH0_DOMAIN='py1150.eu.auth0.com'
-API_AUDIENCE='agency'
+Heroku Config Vars <br/>
+DATABASE_URL = 'postgres://rbgblbcllsormd:cf49d999f6a4acbf22eb09d5a0dbe963a51e1ce235bb2de1c89e5f00f3b468cf@ec2-52-213-173-172.eu-west-1.compute.amazonaws.com:5432/d9fuhp8j095eoj' <br/>
+AUTH0_DOMAIN='py1150.eu.auth0.com' <br/>
+API_AUDIENCE='agency' <br/>
 ALGORITHMS='RS256'
 
 
