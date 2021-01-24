@@ -128,6 +128,7 @@ pip install -r requirements.txt
 
 setup in setup.sh
 
+
 Development Server
 ------------------
 Heroku Config Vars
@@ -135,6 +136,7 @@ DATABASE_URL = 'postgres://rbgblbcllsormd:cf49d999f6a4acbf22eb09d5a0dbe963a51e1c
 AUTH0_DOMAIN='py1150.eu.auth0.com'
 API_AUDIENCE='agency'
 ALGORITHMS='RS256'
+
 
 Database
 -------
